@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900');
 
 body {
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #E9EBEE;
 }
 
@@ -35,7 +35,6 @@ a :hover {
     margin-bottom: 0px;
     font-family: 'Raleway:900', sans-serif;
 }
-
 
 .scroll-box {
     overflow-y: scroll;
@@ -122,7 +121,6 @@ a :hover {
     font-size: 30px;
 }
 
-
 /************************DATA PAGE****************************/
 
 .chart {
@@ -133,6 +131,7 @@ a :hover {
     list-style: none;
     padding: 0;
 }
+
 .y {
     position: absolute;
     -webkit-transform: rotate(-90deg);
@@ -142,20 +141,24 @@ a :hover {
     bottom: 0;
     padding: 5px;
 }
+
 .x {
     position: absolute;
     top: 100%;
     width: 100%;
     padding: 5px;
 }
+
 .bar {
     background: lightskyblue;
     position: absolute;
     bottom: 0;
 }
+
 .bar:nth-of-type(even) {
     background: lightcoral;
 }
+
 .bar span {
     position: absolute;
     bottom: -10px;
@@ -171,7 +174,6 @@ a :hover {
     white-space: nowrap;
 }
 
-
 .dot {
     background: lightcoral;
     width: 10px;
@@ -179,6 +181,7 @@ a :hover {
     border-radius: 50%;
     position: absolute;
 }
+
 .dot span {
     display: none;
     position: absolute;
@@ -191,6 +194,7 @@ a :hover {
     white-space: nowrap;
     z-index: 9999;
 }
+
 .dot:hover span {
     display: block;
 }

@@ -10,7 +10,9 @@
                         <div class="y" style="width:{{height}}px;">{{barYAxis}}</div>
                         <div class="x">{{barXAxis}}</div>
                         <!-- Data -->
-                        <li ng-repeat="bar in data" class="bar" style="height:{{bar.value / max * height}}px; width:{{width / data.length - 5}}px; left:{{$index / data.length * width}}px;"><span>{{bar.label}}: {{bar.value}}</span></li>
+                        <li ng-repeat="bar in data" class="bar"
+                            style="height:{{bar.value / max * height}}px; width:{{width / data.length - 5}}px; left:{{$index / data.length * width}}px;">
+                            <span>{{bar.label}}: {{bar.value}}</span></li>
                     </ul>
                 </div>
                 <div class="col-xs-5 text-center graphs">
@@ -20,12 +22,14 @@
                         <div class="y" style="width:{{height}}px;">{{lineYAxis}}</div>
                         <div class="x">{{lineXAxis}}</div>
                         <!-- Data -->
-                        <li ng-repeat="dot in likesData" class="dot" style="bottom:{{dot.value / maxTwo * height}}px; left:{{($index + 0.5) / likesData.length * width}}px;"><span>{{dot.label}} - {{dot.value}}</span></li>
+                        <li ng-repeat="dot in likesData" class="dot"
+                            style="bottom:{{dot.value / maxTwo * height}}px; left:{{($index + 0.5) / likesData.length * width}}px;">
+                            <span>{{dot.label}} - {{dot.value}}</span></li>
                 </div>
                 </ul>
-                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 

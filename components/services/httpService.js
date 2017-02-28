@@ -14,7 +14,7 @@ app.service("httpService", ["$http", "$filter", function ($http, $filter) {
             var instagramPosts = $filter('filter')(apiData, "instagram");
             var tumblrPosts = $filter('filter')(apiData, "tumblr");
 
-             socialData = [
+            socialData = [
                 {
                     label: 'Facebook Posts',
                     value: facebookPosts.length
@@ -59,7 +59,7 @@ app.service("httpService", ["$http", "$filter", function ($http, $filter) {
                 }
             }
 
-             socialDataTwo = [
+            socialDataTwo = [
                 {
                     label: formatDate(1),
                     value: todayLikes
