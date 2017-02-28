@@ -180,6 +180,7 @@ a :hover {
     height: 10px;
     border-radius: 50%;
     position: absolute;
+    z-index: 9999;
 }
 
 .dot span {
@@ -187,15 +188,16 @@ a :hover {
     position: absolute;
     top: -10px;
     left: 20px;
-    background: red;
+    background: lightskyblue;
     color: white;
     border-radius: 3px;
-    padding: 5px;
+    padding: 2px;
     white-space: nowrap;
     z-index: 9999;
+    font-size: 12px;
 }
 
-.dot:hover span {
+.dot span {
     display: block;
 }
 
