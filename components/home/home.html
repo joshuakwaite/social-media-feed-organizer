@@ -1,0 +1,108 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3">
+            <h2 class="text-center provider-name">Facebook</h2>
+            <div class="row">
+                <div class="col-xs-12 scroll-box">
+                    <div class="post-container" ng-repeat="media in activity | filter:{ provider: 'facebook'}"
+                         style="border: 1px solid black;">
+                        <div class="inner-container">
+                            <img ng-src="{{media.actor_avator}}" class="img-responsive avatar">
+                            <p class="title"><span class="name">{{media.actor_username}}</span><br>
+                                {{media.activity_date}}</p>
+                            <div class="thumblikes"><i class="fa fa-thumbs-o-up thumb" aria-hidden="true"></i>
+                                {{media.activity_likes}}
+                            </div>
+
+
+                            <p ng-if="media.activity_message.includes('jpeg') === false" class="message">
+                                {{media.activity_message}}</p>
+                            <img ng-src="{{media.activity_attachment}}" class="img-responsive">
+                            <div class="comment">Comments: {{media.activity_comments}}</div>
+                            <div class="share">Shares: {{media.activity_shares}}</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <h2 class="text-center provider-name">Instagram</h2>
+            <div class="row">
+                <div class="col-xs-12 scroll-box">
+                    <div class="post-container" ng-repeat="media in activity | filter:{ provider: 'instagram'}"
+                         style="border: 1px solid black;">
+                        <div class="inner-container">
+                            <img ng-src="{{media.actor_avator}}" class="img-responsive avatar">
+                            <p class="title"><span class="name">{{media.actor_username}}</span><br>
+                                {{media.activity_date}}</p>
+                            <div class="thumblikes"><i class="fa fa-thumbs-o-up thumb" aria-hidden="true"></i>
+                                {{media.activity_likes}}
+                            </div>
+
+
+                            <p ng-if="media.activity_message.includes('jpeg') === false" class="message">
+                                {{media.activity_message}}</p>
+                            <img ng-src="{{media.activity_attachment}}" class="img-responsive">
+                            <div class="comment">Comments: {{media.activity_comments}}</div>
+                            <div class="share">Shares: {{media.activity_shares}}</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <h2 class="text-center provider-name">Twitter</h2>
+            <div class="row">
+                <div class="col-xs-12 scroll-box">
+                    <div class="post-container" ng-repeat="media in activity | filter:{ provider: 'twitter'}"
+                         style="border: 1px solid black;">
+                        <div class="inner-container">
+                            <img ng-src="{{media.actor_avator}}" class="img-responsive avatar">
+                            <p class="title"><span class="name">{{media.actor_username}}</span><br>
+                                {{media.activity_date}}</p>
+                            <div class="thumblikes"><i class="fa fa-thumbs-o-up thumb" aria-hidden="true"></i>
+                                {{media.activity_likes}}
+                            </div>
+
+
+                            <p ng-if="media.activity_message.includes('jpeg') === false" class="message">
+                                {{media.activity_message}}</p>
+                            <img ng-src="{{media.activity_attachment}}" class="img-responsive">
+                            <div class="comment">Comments: {{media.activity_comments}}</div>
+                            <div class="share">Shares: {{media.activity_shares}}</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <h2 class="text-center provider-name">Tumblr</h2>
+            <div class="row">
+                <div class="col-xs-12 scroll-box">
+                    <div class="post-container" ng-repeat="media in activity | filter:{ provider: 'tumblr'}"
+                         style="border: 1px solid black;">
+                        <div class="inner-container">
+                            <img ng-src="{{media.actor_avator}}" class="img-responsive avatar">
+                            <p class="title"><span class="name">{{media.actor_username}}</span><br>
+                                {{media.activity_date}}</p>
+                            <div class="thumblikes"><i class="fa fa-thumbs-o-up thumb" aria-hidden="true"></i>
+                                {{media.activity_likes}}
+                            </div>
+
+
+                            <p ng-if="media.activity_message.includes('jpeg') === false" class="message">
+                                {{media.activity_message}}</p>
+                            <img ng-src="{{media.activity_attachment}}" class="img-responsive">
+                            <div class="comment">Comments: {{media.activity_comments}}</div>
+                            <div class="share">Shares: {{media.activity_shares}}</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
