@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #E9EBEE;
+}
+
+a :hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation {
+    display: block;
+    padding: 10px;
+    background: white;
+    border-bottom: lightgray;
+    box-shadow: 1px 1px 1px gray;
+
+}
+
+.navigation-link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.inner-container {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.provider-name {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0px;
+    font-family: 'Raleway:900', sans-serif;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 85vh;
+
+}
+
+.avatar {
+    width: 50px;
+    display: inline-block;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 50%;
+
+}
+
+.post-container {
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.post-container .title {
+    display: inline-block;
+    position: relative;
+    bottom: -20px;
+}
+
+.name {
+    font-family: "Raleway:900", sans-serif;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.message {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.share {
+    display: inline-block;
+    position: relative;
+}
+
+.share a {
+    cursor: pointer;
+    color: black;
+}
+
+.comment {
+    display: block;
+    position: relative;
+    left: 192px;
+    bottom: -20px;
+}
+
+.comment a {
+    cursor: pointer;
+    color: black;
+}
+
+.thumblikes {
+    display: block;
+    position: relative;
+    left: 230px;
+    bottom: 33px;
+}
+
+.thumb {
+    font-size: 2em;
+    padding-right: 5px;
+}
+
+.title a, .actor-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.title a :hover {
+    color: #23527C;
+}
+
+.sharecons {
+    font-size: 30px;
+}
+
+/************************DATA PAGE****************************/
+
+.chart {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 60px auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.y {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    bottom: 0;
+    padding: 5px;
+}
+
+.x {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.bar {
+    background: lightskyblue;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar:nth-of-type(even) {
+    background: lightcoral;
+}
+
+.bar span {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    font-weight: bold;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.dot {
+    background: lightcoral;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot span {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+.dot:hover span {
+    display: block;
+}
+
+.graphs {
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+
+}
