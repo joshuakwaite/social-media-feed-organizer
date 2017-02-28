@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<a href="#!/home">Home</a>
-
+<div class="text-left navigation">
+<a href="#!/home" class="navigation-link">Home</a>
+<a href="#!/data" class="navigation-link">Data</a>
+</div>
 <ng-view></ng-view>
 
 
@@ -20,6 +22,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
 <script src="app.js"></script>
 <script src="components/home/home.js"></script>
+<script src="components/data/data.js"></script>
 <script src="components/services/httpService.js"></script>
 </body>
 </html>

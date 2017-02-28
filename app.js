@@ -7,6 +7,10 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: "components/home/home.html",
             controller: "homeController"
         })
+        .when("/data", {
+            templateUrl: "components/data/data.html",
+            controller: "dataController"
+        })
         .otherwise({
             redirectTo: "/home"
         });

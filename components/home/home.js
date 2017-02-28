@@ -11,4 +11,16 @@ app.controller("homeController", ["$scope", "httpService", function ($scope, htt
         });
     }
 
+    $scope.liked = function (stuff) {
+        $scope.media.activity_likes = stuff.activity_likes += 1
+    };
+
+    $scope.addComment = function (stuff) {
+        $scope.media.activity_comments = stuff.activity_comments += 1
+    };
+
+    $scope.shared = function (stuff) {
+        $scope.media.activity_shares = stuff.activity_shares += 1
+    };
+
 }]);
