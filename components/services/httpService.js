@@ -61,17 +61,18 @@ app.service("httpService", ["$http", "$filter", function ($http, $filter) {
 
             socialDataTwo = [
                 {
-                    label: formatDate(1),
-                    value: todayLikes
+                    label: formatDate(2),
+                    value: twoDaysAgoLikes
                 },
                 {
-                    label: formatDate(2),
+                    label: formatDate(1),
                     value: yesterdayLikes
                 },
                 {
-                    label: formatDate(3),
-                    value: twoDaysAgoLikes
+                    label: formatDate(0),
+                    value: todayLikes
                 }
+
             ];
 
             var data = [socialData, socialDataTwo]
