@@ -81,19 +81,12 @@ app.service("httpService", ["$http", "$filter", function ($http, $filter) {
     };
 
     function formatDate(x) {
-        var monthNames = [
-            "01", "02", "03",
-            "04", "05", "06", "07",
-            "08", "09", "10",
-            "11", "12"
-        ];
 
-        var d = new Date();
-        var day = d.getDate();
-        var monthIndex = d.getMonth();
-        var year = d.getFullYear();
+        var d = new Date()
+        d.setDate(d.getDate()-x)
 
-        return year + '-' + monthNames[monthIndex] + '-' + (day - x);
+        return date = $filter('date')(d,'yyyy-MM-dd');
+
     }
 
 }]);
